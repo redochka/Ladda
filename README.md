@@ -8,7 +8,7 @@ Buttons with built-in loading indicators, effectively bridging the gap between a
 
 Release downloads and change history is available here <https://github.com/hakimel/Ladda/releases>.
 
-The compiled files for the project that you should be using are available in the **/dist** directory. You will need to include both the **ladda.min.js** and **spin.min.js** files as well as ONE of the two style sheets. If you want the button styles used in the [Ladda example page](http://lab.hakim.se/ladda) use the **ladda.min.css** file, if you want to have the functional buttons without the visual style (colors, padding etc) use the **ladda-themeless.min.css** file.
+You will need to include ONE of the two style sheets in the **/dist** directory. If you want the button styles used in the [Ladda example page](http://lab.hakim.se/ladda) use the **ladda.min.css** file, if you want to have the functional buttons without the visual style (colors, padding etc) use the **ladda-themeless.min.css** file.
 
 #### HTML
 
@@ -71,19 +71,10 @@ Ladda.stopAll();
 
 ## Module
 
-You can `npm install ladda`. The spinner and Ladda can be loaded as a module using AMD or CommonJS.
+You can `npm install ladda`. Ladda can be loaded as an ES2015 module:
 
 ```javascript
-// Using RequireJS
-define(['ladda'], function(Ladda) {
-	// Make Buttons Here
-});
-```
-
-Or in CommonJS, you will:
-
-```javascript
-var ladda = require('ladda');
+import * as Ladda from 'ladda';
 ```
 
 ## Browser support
